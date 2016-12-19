@@ -12,7 +12,8 @@ node {
     // Mark the code build 'stage'....
     stage 'Build'
    
-    def  mvnHome = tool 'M2_HOME'
+ //   def  mvnHome = tool 'M2_HOME'
+	  def  mvnHome = tool 'Maven'
    bat(/"${mvnHome}\bin\mvn" clean package/)
     
   }

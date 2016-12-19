@@ -1,0 +1,5 @@
+com\miracle\web\action\WelcomeUserAction.class
+com\miracle\service\restclient\TurnipBean.class
+com\miracle\web\action\TurnipAbstractAction.class
+com\miracle\service\restclient\TurnipWebConstants.class
+com\miracle\service\restclient\ConnectRestService.class

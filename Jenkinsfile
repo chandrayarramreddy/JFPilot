@@ -17,4 +17,5 @@ node {
  //  bat(/"${mvnHome}\bin\mvn" clean package/)
     sh "'${mvnHome}/bin/mvn' clean package"
   }
+	build 'Test1MB' 
 }

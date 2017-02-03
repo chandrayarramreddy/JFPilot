@@ -83,7 +83,7 @@ public class WelcomeUserAction extends ActionSupport implements ServletRequestAw
 	
 		return message;
 	}
-
+//
 	
     public void setServletRequest(HttpServletRequest httpServletRequest) {
         this.httpServletRequest = httpServletRequest;

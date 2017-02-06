@@ -5,7 +5,7 @@ node {
   
   ws("workspace/${env.JOB_NAME}/${env.BRANCH_NAME}".replace('%2F', '_')) {
 	 
-    // Mark the code checkout 'stage'..........
+    // Mark the code checkout 'stage'.............
     stage 'Checkout'
 	
     checkout scm

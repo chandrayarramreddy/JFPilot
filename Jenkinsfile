@@ -4,7 +4,7 @@ node {
   // Need to replace the '%2F' used by Jenkins to deal with / in the path (e.g. story/...) because tests that do getResource will escape the % again, and the test files can't be found.
   
   ws("workspace/${env.JOB_NAME}/${env.BRANCH_NAME}".replace('%2F', '_')) {
-	  def wrk = workspace/${env.JOB_NAME}/${env.BRANCH_NAME}
+	 
     // Mark the code checkout 'stage'..........
     stage 'Checkout'
 	
@@ -18,7 +18,7 @@ node {
  //  bat(/"${mvnHome}\bin\mvn" clean package/)
     sh "'${mvnHome}/bin/mvn' clean package"
      //sh 'cp /root/.jenkins/workspace/SampleMultibranch/master/master/target/PilotProject-0.war /usr/local/tomcat7/webapps/'
-     sh 'cp /root/.jenkins/workspace/SampleMultibranch/master/master/target/PilotProject-0.war /usr/local/tomcat7/webapps/'
+     sh 'cp /target/PilotProject-0.war /usr/local/tomcat7/webapps/'
   }
 	// ..
 	build 'Test1MB' 

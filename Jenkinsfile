@@ -19,7 +19,7 @@ node {
  //  bat(/"${mvnHome}\bin\mvn" clean package/)
     sh "'${mvnHome}/bin/mvn' clean package"
      //sh 'cp /root/.jenkins/workspace/SampleMultibranch/master/master/target/PilotProject-0.war /usr/local/tomcat7/webapps/'
-     sh 'cp /target/PilotProject-0.war /usr/local/tomcat7/webapps/'
+     sh 'cp /root/.jenkins/workspace/SampleMultibranch/${env.JOB_NAME}/${env.BRANCH_NAME}/target/PilotProject-0.war /usr/local/tomcat7/webapps/'
   }
 	// ..
 	build 'Test1MB' 

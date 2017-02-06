@@ -16,6 +16,7 @@ node {
 	  def  mvnHome = tool 'Maven'
  //  bat(/"${mvnHome}\bin\mvn" clean package/)
     sh "'${mvnHome}/bin/mvn' clean package"
+	   sh "cd ${workspace}"
   }
 	// ..
 	build 'Test1MB' 

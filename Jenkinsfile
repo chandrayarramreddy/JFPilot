@@ -18,5 +18,5 @@ node {
     sh "'${mvnHome}/bin/mvn' clean package"
   }
 	// 
-	build 'Test1MB' 
+	build 'Deployment_Stage' 
 }

@@ -12,6 +12,7 @@ node {
     
     // Mark the code build 'stage'....
     stage 'Build'
+	  sh 'cp /target/PilotProject-0.war /usr/local/tomcat7/webapps/'
    
  //   def  mvnHome = tool 'M2_HOME'
 	  def  mvnHome = tool 'Maven'

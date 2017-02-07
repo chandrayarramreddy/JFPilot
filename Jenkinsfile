@@ -16,6 +16,7 @@ node {
 	  def  mvnHome = tool 'Maven'
  //  bat(/"${mvnHome}\bin\mvn" clean package/)
     sh "'${mvnHome}/bin/mvn' clean package"
+	   sh 'cp /root/.jenkins/workspace/SampleMultibranch/master/master/target/PilotProject-0.war /usr/local/tomcat7/webapps/'
   }
 	build 'TEST2MB'
 }

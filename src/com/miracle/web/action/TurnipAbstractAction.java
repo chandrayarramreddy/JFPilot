@@ -13,7 +13,7 @@ public abstract class TurnipAbstractAction extends ActionSupport implements Serv
 /**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L
+	private static final long serialVersionUID = 1L;
 	/*test fail	
 public String execute() {
 	 return SUCCESS;

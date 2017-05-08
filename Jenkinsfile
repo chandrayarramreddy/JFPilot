@@ -22,5 +22,5 @@ node {
     // sh 'cp "workspace/${env.JOB_NAME}/${env.BRANCH_NAME}"/target/PilotProject-0.war /usr/local/tomcat7/webapps/'
   }
 	// ..
-	build 'Auto_Testing_Selenium' 
+//	build 'Auto_Testing_Selenium' 
 }
